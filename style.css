@@ -1,0 +1,420 @@
+* { 
+
+                    padding: 0; 
+                
+                    margin: 0; 
+                
+                    box-sizing: border-box; 
+                } 
+
+                  
+                body { 
+                    background: linear-gradient(45deg, #010101, #302a2a);
+                
+                    color: rgb(130, 128, 128); 
+                
+                    font-family: "Fira Sans", sans-serif;                 
+                } 
+                
+                  
+                nav { 
+                
+                    width: 100%; 
+                
+                    height: 50px; 
+                
+                    display: flex; 
+                
+                    justify-content: space-between; 
+                
+                    padding: 8px 5%; 
+                
+                    background-color: #4147425e; 
+                } 
+                
+                  
+                nav .heading { 
+                
+                    font-size: 30px; 
+                
+                    font-weight: 700; 
+                
+                    color: rgb(255, 255, 255); 
+                } 
+                
+                  
+                nav ul { 
+                
+                    display: flex; 
+                
+                    list-style: none; 
+                } 
+                
+                  
+                nav ul li { 
+                
+                    padding: 8px 15px; 
+                
+                    border-radius: 100px; 
+                
+                    transition: 0.2s ease-in; 
+                } 
+                
+                  
+                nav ul li a { 
+                
+                    font-size: 20px; 
+                
+                    font-weight: 500; 
+                
+                    text-decoration: none; 
+                
+                    color: rgb(255, 255, 255); 
+                } 
+                
+                  
+                nav ul li:hover { 
+                
+                    background-color: rgb(30, 172, 28); 
+                } 
+                
+                  
+                nav ul li a:hover { 
+                
+                    color: rgb(0, 0, 0); 
+                } 
+
+                  
+                /* responsive navbar css */
+                
+                  
+                .line { 
+
+                    margin-left: 5px; 
+                
+                    margin: 3% 5%; 
+                } 
+                
+                  
+                
+                .line .side1 { 
+                
+                    padding-right: 00px; 
+                } 
+                
+                  
+                
+                .side1 h1 { 
+                    
+                    display: flex;
+
+                    justify-content: center;
+
+                    align-items: center;
+                
+                    font-size: 60px; 
+                
+                    margin-bottom: 20px; 
+                
+                    color: rgb(247, 173, 53); 
+                } 
+                
+
+                a { 
+                
+                    text-decoration: none; 
+                
+                    color: rgb(251, 251, 251); 
+                } 
+                
+                  
+                /* Header content responsive */
+                
+                @media screen and (max-width: 980px) { 
+
+                  
+                
+                    .side1 h1 { 
+                
+                        font-size: 40px; 
+                
+                    } 
+                
+                  
+                
+                    .side1 p { 
+                
+                        font-size: 17px; 
+                
+                    } 
+                
+                  
+                
+                    .line { 
+                
+                        margin-top: 80px; 
+                
+                    } 
+                } 
+                
+                  
+                
+                @media screen and (max-width: 600px) { 
+                
+                    .side1 h1 { 
+                
+                        font-size: 35px; 
+                
+                    } 
+                
+                  
+                
+                    .line { 
+                
+                        flex-direction: column; 
+                
+                    } 
+                
+                  
+                
+                    .line .side1 { 
+                
+                        padding: 30px; 
+                
+                    } 
+                } 
+                
+                  
+                /* section */
+                
+                  
+                section .topic a { 
+                
+                    font-size: 25px; 
+                
+                    font-weight: 500; 
+                
+                    margin-bottom: 10px;
+                } 
+                
+                  
+                .about .boxes { 
+                
+                    display: flex; 
+                
+                    flex-wrap: wrap; 
+                
+                    justify-content: space-between; 
+                } 
+                
+                  
+                .about .boxes .box { 
+                    background-color: rgb(8, 7, 6);
+                    
+                    color: rgb(54, 240, 54);
+                
+                    margin: 10px 20px; 
+                
+                    max-width: calc(100% / 3 - 50px); 
+                
+                    text-align: center; 
+                
+                    border-radius: 12px; 
+                
+                    padding: 30px 10px; 
+                
+                    box-shadow: 0px 0px 25px rgb(0, 255, 8); 
+                
+                    cursor: default; 
+                } 
+
+                .about .boxes .box:hover { 
+                
+                    background-color: #35202022;
+
+                    color: rgb(255, 255, 255);
+
+                }   
+
+
+                /* Contact Page  */
+                
+                  
+                .contact { 
+                
+                    padding: 20px; 
+                } 
+                
+                  
+                .contact .content { 
+                
+                    margin: 0 auto; 
+                
+                    padding: 30px 0; 
+                } 
+                
+                  
+                .content .title { 
+                
+                    width: 80%; 
+                
+                    text-align: center; 
+                
+                    font-weight: bolder; 
+                
+                    font-size: 40px; 
+                } 
+                
+                  
+                .title { 
+                
+                    margin-bottom: 30px; 
+                
+                    margin-left: 150px; 
+                } 
+                
+                  
+                .contactMenu { 
+                
+                    display: flex; 
+                
+                    justify-content: space-evenly; 
+                } 
+                
+                  
+                
+                .input2 { 
+                    
+                    margin-top: 10; 
+                   
+                } 
+                
+                  
+                
+                .label1 { 
+                
+                    font-size: 18px; 
+                
+                    margin-top: 8px; 
+                
+                    margin-bottom: 8px; 
+                
+                    font-weight: bolder; 
+                } 
+                
+                  
+                
+                .contactMenu .input1 input { 
+
+                    border-radius: 13px; 
+                
+                    padding: 6px; 
+                } 
+                
+                  
+                
+                .input2 input { 
+                
+                    border-color: rgb(4, 255, 0); 
+                
+                    width: 400px; 
+                    background-color: #252525;
+                    
+                } 
+                
+                  
+                .button { 
+                    color: #130d0d;
+                    margin-top: 12px; 
+                
+                    margin-left: 5px; 
+                } 
+                
+                  
+                .button button { 
+                
+                    background-color: #a39d9d; 
+                    width: 162px; 
+                
+                    height: 35px; 
+                
+                    border-radius: 12px; 
+                
+                    border-color: rgb(5, 240, 21); 
+                } 
+                
+                  
+                .button button:hover { 
+                
+                    background-color: #6e23ca; 
+                } 
+                
+                
+                .rightside1 { 
+                
+                    display: flex; 
+                
+                    flex-direction: column; 
+                
+                    margin-left: 300px; 
+                } 
+                
+                  
+                
+                .title1 { 
+                
+                    font-size: 18px; 
+                
+                    margin-top: 8px; 
+                
+                    margin-bottom: 5px; 
+                
+                    font-weight: bolder; 
+                } 
+                
+                  
+                
+                .content1 { 
+                
+                    width: 450px; 
+                
+                    margin-top: 2px; 
+                
+                    color: rgb(128, 121, 121); 
+                } 
+                
+                .EXplo_more{
+
+                    display: flex;
+
+                    justify-content: center;
+
+                    align-items: center;
+                }
+
+                .button2 { 
+                    color: #130d0d;
+                    margin-top: 12px; 
+                
+                    margin-left: 5px; 
+                } 
+                
+                  
+                .button2 button { 
+                
+                    background-color: #a39d9d;
+
+                    width: 150px; 
+                
+                    height: 35px; 
+                
+                    border-radius: 12px; 
+                
+                    border-color: rgb(5, 240, 21); 
+                } 
+                
+                  
+                .button2 button:hover { 
+                
+                    background-color: #6e23ca; 
+                }          
